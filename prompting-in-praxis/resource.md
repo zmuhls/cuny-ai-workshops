@@ -29,7 +29,7 @@
 
 ### Setup Instructions
 1. Log into [Open WebUI](https://openwebui.cuny.qzz.io/)
-2. Select model: **GPT-4o** or **Claude 3.5 Sonnet**
+2. Select model: **Qwen3-235B-A22B** or **GPT-OSS-120B**
 3. Set temperature: **0.2** (focused completion)
 
 ### Prompt Template
