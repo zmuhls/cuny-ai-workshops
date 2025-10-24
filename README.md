@@ -11,7 +11,7 @@ The **CUNY AI Lab** is a faculty and staff-led incubator for experimentation wit
 ### [Critical Play](./critical-play/)
 Exploring how game mechanics can reveal AI limitations through playful interactions. Participants design games that expose AI behaviors including confabulation, reasoning failures, and context limitations.
 
-- **Technology:** Reveal.js presentation with custom Canvas visualizations
+- **Technology:** Reveal.js presentation with custom JavaScript visualizations
 - **Format:** 90-minute interactive workshop
 - **Originally conducted:** Interactive Technology and Pedagogy Certificate Program, October 16, 2024
 
