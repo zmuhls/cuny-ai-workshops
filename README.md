@@ -11,35 +11,35 @@ The **CUNY AI Lab** is a faculty and staff-led incubator for experimentation wit
 ### [Prompting in Praxis](./prompting-in-praxis/)
 Interactive workshop on language model concepts and prompting techniques using the CUNY Open WebUI experimental pilot. Participants develop hands-on skills for historical research, document analysis, and critical evaluation of AI-generated content.
 
-**Technology:** CUNY Open WebUI platform for live model comparison
-**Format:** 90-minute interactive workshop with hands-on exercises
+- **Technology:** CUNY Open WebUI platform for live model comparison
+- **Format:** 90-minute interactive workshop with hands-on exercises
 
 ### [Critical Play](./critical-play/)
 Exploring how game mechanics can reveal AI limitations through playful interactions. Participants design games that expose AI behaviors including confabulation, reasoning failures, and context limitations.
 
-**Technology:** Reveal.js presentation with custom Canvas visualizations
-**Format:** 90-minute interactive workshop
+- **Technology:** Reveal.js presentation with custom Canvas visualizations
+- **Format:** 90-minute interactive workshop
 
 ### [Disciplinary Thinking](./disciplinary-thinking/)
 Addresses critical issues in data privacy, intellectual property, and algorithmic bias to help instructors select appropriate AI tools for their discipline and develop students' AI literacy skills.
 
-**Technology:** Workshop materials (slides, outlines, worksheets)
-**Format:** 90-minute Hyflex workshop
-**Originally conducted:** Teaching and Learning Center, March 4, 2024
+- **Technology:** Workshop materials (slides, outlines, worksheets)
+- **Format:** 90-minute Hyflex workshop
+- **Originally conducted:** Teaching and Learning Center, March 4, 2024
 
 ### [Game-Based Learning](./game-based-learning/)
 Introduces game-based strategies for developing students' AI literacy through interactive storytelling, collaborative problem solving, and prompt engineering via choose-your-own-adventure games.
 
-**Technology:** Workshop materials (slides, outlines, companion resources)
-**Format:** 90-minute in-person workshop
-**Originally conducted:** Teaching and Learning Center, October 16, 2024
+- **Technology:** Workshop materials (slides, outlines, companion resources)
+- **Format:** 90-minute in-person workshop
+- **Originally conducted:** Teaching and Learning Center, October 16, 2024
 
 ### [AI Basics and Policy Statements](./ai-policy-basics/)
 Provides a brief introduction to generative AI and helps instructors craft thoughtful classroom policies through interactive visualizations, student testimonials, and collaborative policy drafting.
 
-**Technology:** Workshop materials (slides, outlines, worksheets)
-**Format:** 90-minute interactive workshop
-**Originally conducted:** Teaching and Learning Center, October 1, 2025
+- **Technology:** Workshop materials (slides, outlines, worksheets)
+- **Format:** 90-minute interactive workshop
+- **Originally conducted:** Teaching and Learning Center, October 1, 2025
 
 ### [Teach@CUNY AI Toolkit](./tcuny-ai-toolkit/)
 Comprehensive resource developed by the Teaching and Learning Center to help CUNY instructors navigate and critically engage with artificial intelligence in educational settings through five core provocations and practical guidance.
