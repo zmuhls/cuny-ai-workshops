@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Play with LLMs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    <style>
+        .reveal .timing {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 0.45em;
+            color: #666;
+            background: rgba(0,0,0,0.6);
+            padding: 3px 8px;
+            border-radius: 3px;
+            z-index: 100;
+            font-weight: normal;
+        }
+        /* Hide timing on non-activity slides */
+        .section-intro .timing,
+        .section-demo .timing,
+        .section-playful .timing,
+        .section-playtest .timing {
+            display: none;
+        }
+        .reveal h1 {
+            font-size: 1.6em;
+            margin-bottom: 0.4em;
+            text-transform: none;
+        }
+        .reveal h2 {
+            font-size: 1.6em;
+            margin-bottom: 0.5em;
+            margin-top: 0.2em;
+            text-transform: none;
+        }
+        .reveal h3 {
+            font-size: 1.1em;
+            margin-bottom: 0.4em;
+            margin-top: 0.2em;
+            text-transform: none;
+        }
+        .reveal p {
+            margin: 0.4em 0;
+            font-size: 0.85em;
+        }
+        .reveal ul {
+            font-size: 0.75em;
+            margin-top: 0.5em;
+        }
+        .reveal .small {
+            font-size: 0.7em;
+        }
+        .reveal section {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 60px 80px !important;
+            text-align: left !important;
+            box-sizing: border-box;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-align: left;
+            color: #ffffff;
+        }
+        .reveal p, .reveal ul, .reveal table, .reveal li {
+            text-align: left;
+            color: #d0d0d0;
+        }
+        /* Ensure nested sections inherit padding */
+        .reveal .slides > section > section {
+            padding: 60px 80px !important;
+        }
+        .reveal h2 {
+            margin-bottom: 1em;
+        }
+        .reveal h3 {
+            margin-bottom: 0.8em;
+        }
+        .reveal ul, .reveal p {
+            margin-bottom: 1em;
+        }
+        .reveal img {
+            max-height: 400px;
+        }
+        .reveal table {
+            font-size: 0.5em;
+            margin: 10px auto;
+            width: 90%;
+        }
+        .reveal th {
+            background-color: rgba(66,175,250,0.2);
+            font-weight: bold;
+            color: #42affa;
+        }
+        .reveal td, .reveal th {
+            padding: 6px 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: left;
+        }
+        .reveal .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            font-size: 0.75em;
+            margin-top: 0.5em;
+        }
+        .reveal .checkbox-list {
+            list-style: none;
+            text-align: left;
+            font-size: 0.9em;
+            padding-left: 0;
+        }
+        .reveal .checkbox-list li {
+            margin: 0.3em 0;
+        }
+        .reveal .checkbox-list li:before {
+            content: "☐ ";
+            margin-right: 8px;
+            color: #42affa;
+            font-weight: bold;
+        }
+        .reveal .worksheet-section {
+            background: rgba(66,175,250,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px auto;
+            font-size: 0.75em;
+            border: 1px solid rgba(66,175,250,0.3);
+            max-width: 80%;
+        }
+        /* Section background colors for different workshop phases */
+        .section-intro {
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+        .section-demo {
+            background-color: rgba(5, 5, 5, 1) !important;
+        }
+        .section-playful {
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+        .section-worksheet {
+            background-color: rgba(5, 5, 5, 1) !important;
+        }
+        .section-activity {
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+        .section-playtest {
+            background-color: rgba(5, 5, 5, 1) !important;
+        }
+        /* Remove default slide background */
+        .reveal .slides {
+            background: transparent;
+        }
+        .reveal a {
+            color: #42affa;
+            text-decoration: none;
+        }
+        .reveal a:hover {
+            color: #6fc3ff;
+            text-decoration: underline;
+        }
+        .reveal .controls {
+            color: #42affa;
+        }
+        .reveal .progress {
+            display: none;
+        }
+        .reveal .slide-number {
+            left: 20px;
+            right: auto;
+            font-size: 1.2em;
+            color: #888;
+        }
+        .reveal .citations {
+            font-size: 0.55em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title Slide -->
+            <section data-timing="60" class="section-intro">
+                <h1>Critical Play with Large Language Models</h1>
+                <p>Thursday, October 16</p>
+                <p class="small">Facilitated by Zach Muhlbauer</p>
+                <p class="small">Teaching and Learning Center | Interactive Technology & Pedagogy Lab</p>
+                <canvas id="networkCanvas" style="width: 100%; height: 400px; margin-top: 40px;"></canvas>
+                <div class="timing">1 min</div>
+            </section>
+
+            <!-- Welcome and Introductions -->
+            <section data-timing="600" class="section-intro">
+                <h2>Welcome and introductions</h2>
+                <div class="timing">10 min</div>
+                <p class="small">Please share with the group:</p>
+                <ul>
+                    <li>Name and pronouns</li>
+                    <li>Field of study or work</li>
+                    <li>A favorite game you play with family, friends, or students</li>
+                </ul>
+                <canvas id="arcadeCanvas" style="width: 100%; height: 400px; margin-top: 40px;"></canvas>
+            </section>
+
+            <!-- Game mechanics as analytical scaffolds -->
+            <section class="section-demo">
+                <h2>Game mechanics as analytical scaffolds</h2>
+                <div class="timing">10 min</div>
+                <p class="small">Game mechanics serve as analytical scaffolds that reveal AI limitations in situ.</p>
+                <p class="small">Example: When Chess.com blogger "Nightly-Knight" played against ChatGPT, it repeatedly made illegal moves—including attempting to move a pawn horizontally to capture (pawns can only capture diagonally). ChatGPT "forgets the position of the game" and makes moves that violate basic chess rules rather than accepting disadvantageous positions.</p>
+                <canvas id="chessCanvas" style="width: 100%; height: 300px; margin-top: 20px;"></canvas>
+            </section>
+
+            <!-- Jeopardy LM Exercise -->
+            <section class="section-demo">
+                <section>
+                    <h2>Jeopardy! Board Emulator</a></h2>
+                    <p class="small">This interactive Jeopardy! emulator allows you to input custom categories and witness the LLM generate clues in real-time, exposing how it handles knowledge at different difficulty levels and revealing confabulation patterns when pushed beyond its training data.</p>
+                    <p class="small">The format requires the LLM to generate:</p>
+                    <ul>
+                        <li>Coherent categories</li>
+                        <li>Sliding difficulty levels</li>
+                        <li>Factual clues</li>
+                    </ul>
+                    <p class="small">This makes confabulation immediately visible when it fails.</p>
+                </section>
+
+                <section class="section-demo">
+                    <h2>Prompting AI-generated Jeopardy! board</h2>
+                    <a href="https://zmuhls.github.io/jeopardy-lm/" target="_blank">Navigate to Jeopardy! </a>
+                    <p class="small">We'll test three category types to progressively stress the model's knowledge boundaries:</p>
+                    <ul>
+                        <li>Simple category (accurate baseline)</li>
+                        <li>Obscure real category (mixed results)</li>
+                        <li>Fictitious category (confabulation trigger)</li>
+                    </ul>
+                </section>
+
+                <section class="section-demo">
+                    <h2>Debrief discussion</h2>
+                    <p><strong>Respond in chat:</strong></p>
+                    <p class="small">What did you notice from the Jeopardy board demonstration? What was most striking?</p>
+                    <p class="small">What games offer similar affordances in their ability to expose a large language model for the bullshit machine that it is?</p>
+                    <img src="img/jeopardy-board.png" alt="Jeopardy board interface" style="max-height: 450px; margin-top: -10px; width: auto; object-fit: contain;">
+                </section>
+            </section>
+
+            <!-- Critical Play with Mary Flanagan -->
+            <section class="section-playful">
+                <h2>Critical play with Mary Flanagan</h2>
+                <p>Mary Flanagan's "critical play" uses game design to challenge conventions and reveal hidden systems. We apply this iterative design model to expose AI limitations through playful constraints.</p>
+                <p class="small">Traditional iterative game design model:</p>
+                <div style="display: flex; align-items: flex-start; gap: 40px; margin-top: 20px;">
+                    <img src="img/design-model.png" alt="Iterative game design model" style="max-height: 350px; flex-shrink: 0;">
+                    <ul>
+                        <li>Set a design goal</li>
+                        <li>Develop rules</li>
+                        <li>Develop playable prototype</li>
+                        <li>Playtest</li>
+                        <li>Revise goal</li>
+                        <li>REPEAT</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Playful Interactions -->
+            <section class="section-playful">
+                <h2>Playful interactions with LLMs</h2>
+                <p class="small">Interrogating AI: Characterizing emergent playful interactions with ChatGPT (via r/ChatGPT)</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>What it does</th>
+                            <th>Try this</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Reflecting</strong></td>
+                            <td>Prompting AI to self-represent and express "opinions"</td>
+                            <td>Ask about self-understanding</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jesting</strong></td>
+                            <td>Generating humor and nonsensical exchanges</td>
+                            <td>Request absurd combinations</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Imitating</strong></td>
+                            <td>Requesting persona or character mimicry</td>
+                            <td>Ask it to role-play</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Challenging</strong></td>
+                            <td>Testing capabilities until failure</td>
+                            <td>Push logical limits</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tricking</strong></td>
+                            <td>Attempting deception/boundary bypassing</td>
+                            <td>Try jailbreak techniques</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contriving</strong></td>
+                            <td>Creating impossible or fabricated content</td>
+                            <td>Request non-existent things</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Quick Demo Session -->
+            <section class="section-demo">
+                <section>
+                    <h2>Quick demo session</h2>
+                    <div class="timing">10 min</div>
+                    <p>LLMs generate responses through vector similarity: finding statistically likely associations from training data. When given "teacher," the model maps to nearby concepts in semantic space: "classroom," "student," "education."</p>
+                    <p class="small">But what happens when we constrain these associations through game rules? Can we force semantic breakdown by limiting the model's ability to select from its most probable outputs?</p>
+                    <canvas id="vectorCanvas" style="width: 100%; height: 300px; margin-top: 20px;"></canvas>
+                </section>
+
+                <section class="section-demo">
+                    <h2>Exquisite Corpse system prompt</h2>
+                    <p class="small" style="font-style: italic; color: #aaa;">"You are participating in a game of Exquisite Corpse. Respond only to the user's most recent word. Reply with exactly one word per turn, with no punctuation or commentary, and label your response in sequence (Turn 2, Turn 3, etc.). Continue this pattern until Turn 20. When that occurs, stop producing numbered turns and compose a short poem using only the words that appeared in this conversation: nothing added, removed, or borrowed from elsewhere. Arrange them with line breaks and spacing to create a cohesive poem, then ask if the user would like a close reading of it."</p>
+                    <p><a href="https://openwebui.cuny.qzz.io/" target="_blank">https://openwebui.cuny.qzz.io/</a></p>
+                </section>
+            </section>
+
+            <!-- Critical Design Activity -->
+            <section class="section-activity">
+                <section>
+                    <h2>Critical design activity</h2>
+                    <div class="timing">15 min</div>
+                    <p><a href="https://docs.google.com/document/d/13f83FAj-0v6dI5FWJlD8kGLrNdAlktodILSLNyY5-AU/edit?usp=sharing" target="_blank">Use this worksheet</a> to design a game that reveals AI limitations using 2-3 types of playful interactions</p>
+                    <p class="small">Choose 2-3 game formats that might be interesting to combine or explore:</p>
+                    <div class="two-column">
+                        <ul class="checkbox-list">
+                            <li>20 Questions</li>
+                            <li>Exquisite Corpse</li>
+                            <li>Two Truths and a Lie</li>
+                            <li>Word Association</li>
+                            <li>Trivia/Quiz Games</li>
+                            <li>Riddles/Puzzles</li>
+                        </ul>
+                        <ul class="checkbox-list">
+                            <li>Chess/Game Annotation</li>
+                            <li>Role Play/Improv</li>
+                            <li>Debate/Argument</li>
+                            <li>Mad Libs</li>
+                            <li>Other: _______</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section-activity">
+                    <h2>Target AI limitations</h2>
+                    <p class="small">Select which AI weakness(es) you want to expose:</p>
+                    <ul class="checkbox-list">
+                        <li>Confabulation (generating plausible but factually incorrect information)</li>
+                        <li>Logic inconsistency/reasoning failures</li>
+                        <li>Sycophancy (excessive agreement)</li>
+                        <li>Instruction following failures</li>
+                        <li>Semantic breakdown</li>
+                        <li>Other: _______</li>
+                    </ul>
+                    <p class="small" style="margin-top: 20px;"><strong>Example: Sycophancy</strong> - Tell the AI an obviously false "fact" and ask it to explain why it's true. AI often agrees with incorrect user statements rather than challenging them.</p>
+                </section>
+
+                <section class="section-activity">
+                    <h2>Craft your prompts</h2>
+                    <p class="small"><strong>System prompt:</strong> Configure the AI's behavior and constraints</p>
+                    <p class="small" style="margin-left: 40px; font-style: italic; color: #aaa;">Example: "We're playing Mad Libs. I'll give you a sentence with blanks labeled with parts of speech. For each blank, provide two options: (1) a probable word that fits the context, and (2) a statistically improbable word that still matches the part of speech but disrupts semantic coherence. Label them clearly."</p>
+                    <p class="small"><strong>User prompt:</strong> Your first message to start the game</p>
+                    <p class="small" style="margin-left: 40px; font-style: italic; color: #aaa;">Example: "The [adjective] teacher walked into the [noun] and began to [verb]."</p>
+                </section>
+
+                <section class="section-activity">
+                    <h2>Expected outcomes</h2>
+                    <p class="small"><strong>What do you want to reveal about AI abilities/limitations?</strong></p>
+                    <p class="small"><strong>What do you predict will happen? What failure modes might emerge? How will game mechanics make limitations visible?</strong></p>
+                    <canvas id="dominoCanvas" style="width: 100%; height: 300px; margin-top: 30px;"></canvas>
+                </section>
+            </section>
+
+            <!-- Shareback and Playtest -->
+            <section class="section-playtest">
+                <h2>Shareback and playtest</h2>
+                <div class="timing">15 min</div>
+                <p class="small">Navigate to the Open WebUI demo site and sign up: <a href="https://openwebui.cuny.qzz.io/" target="_blank">https://openwebui.cuny.qzz.io/</a></p>
+                <p class="small">Test your game design:</p>
+                <ul class="small">
+                    <li>Select a model from the dropdown menu at the top</li>
+                    <li>Click the configuration icon to open the settings panel</li>
+                    <li>Input your system prompt in the "System Prompt" field</li>
+                    <li>Adjust optional settings (temperature, max tokens) if desired</li>
+                    <li>Begin with your conversation starter in the main chat</li>
+                </ul>
+                <p class="small">Share what you discover about the AI's limitations</p>
+            </section>
+
+            <!-- Resources and Q&A -->
+            <section class="section-playtest">
+                <h2>Resources and Q&A</h2>
+                <h3>Interactive Tools</h3>
+                <ul class="small">
+                    <li><a href="https://zmuhls.github.io/critical-play/" target="_blank">Critical Play with LLMs</a> - Interactive slideshow presentation for ITP Lab</li>
+                    <li><a href="https://github.com/zmuhls/critical-play/" target="_blank">GitHub Repository</a> - Source code and materials for this workshop</li>
+                    <li><a href="https://zmuhls.github.io/jeopardy-lm/" target="_blank">Jeopardy LM Demo</a> - Interactive Jeopardy emulator for testing LLM knowledge boundaries</li>
+                    <li><a href="https://openwebui.cuny.qzz.io/" target="_blank">Open WebUI (CUNY)</a> - Platform for game design and playtest demonstrations</li>
+                </ul>
+                <h3>Research & Citations</h3>
+                <ul class="citations">
+                    <li>Flanagan, M. (2009). <em>Critical Play: Radical Game Design</em>. MIT Press.</li>
+                    <li>Petridis, S., Bazhydai, M., Kinzler, K. D., & Ahl, R. E. (2023). Interrogating AI: Characterizing Emergent Playful Interactions with ChatGPT. <em>CHI EA '23: Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems</em>.</li>
+                    <li>Palisade Research (2025). Playing chess against a stronger opponent can trigger frontier AI agents to cheat. <em>TIME Magazine</em>. <a href="https://time.com/7259395/ai-chess-cheating-palisade-research/" target="_blank">Article</a></li>
+                    <li>Nightly-Knight (Chess.com). Playing chess against ChatGPT | It is a cheater! <a href="https://www.chess.com/blog/Nightly-Knight/playing-chess-against-chatgpt-it-is-a-cheater" target="_blank">Blog post</a></li>
+                    <li>Acher, M. (2024). Debunking the Chessboard: Confronting GPTs Against Chess Engines. <a href="https://blog.mathieuacher.com/GPTsChessEloRatingLegalMoves/" target="_blank">Research blog</a></li>
+                    <li>r/ChatGPT community discussions on playful AI interactions</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            controls: true,
+            progress: true,
+            center: true,
+            width: 1400,
+            height: 900,
+            margin: 0.04,
+
+            // Auto-slide configuration (optional - disabled by default)
+            // autoSlide: 0, // Set to milliseconds to enable auto-advance
+            // loop: false,
+
+            // Timing configuration
+            defaultTiming: 120,
+            totalTime: 5400, // Total: 90 minutes (5400 seconds)
+        });
+
+        // Display elapsed time
+        let startTime = Date.now();
+        setInterval(() => {
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            const minutes = Math.floor(elapsed / 60);
+            const seconds = elapsed % 60;
+            console.log(`Elapsed: ${minutes}:${seconds.toString().padStart(2, '0')}`);
+        }, 1000);
+    </script>
+    <script src="visualizations/network-viz.js"></script>
+    <script src="visualizations/arcade-game.js"></script>
+    <script src="visualizations/chess-viz.js"></script>
+    <script src="visualizations/domino-viz.js"></script>
+    <script src="visualizations/vector-viz.js"></script>
+</body>
+</html>
