@@ -1,9 +1,17 @@
-### Outline: AI Literacy and Game-Based Learning
+# AI Literacy and Game-Based Learning - Workshop Outline
 
-*October 16, 2-3:30pm, In-Person, Room 3317\
-Facilitated by Zach Muhlbauer*
+## Workshop Information
 
-**Link to PDF of Companion Resource**: [AI Literacy & Game-Based Learning.pdf](https://drive.google.com/file/d/1B_pfrMeJriZcsVK8L-AA4cHa9HS11rr9/view?usp=sharing)
+**Title:** AI Literacy and Game-Based Learning  
+**Date:** Wednesday, October 16, 2024  
+**Time:** 2:00-3:30 PM  
+**Duration:** 90 minutes  
+**Format:** In-person (Room 3317)  
+**Facilitator:** Zach Muhlbauer
+
+**Companion Resource:** [AI Literacy & Game-Based Learning.pdf](https://drive.google.com/file/d/1B_pfrMeJriZcsVK8L-AA4cHa9HS11rr9/view?usp=sharing)
+
+## Detailed Agenda
 
 ### Part I: Freewrite and Framing
 

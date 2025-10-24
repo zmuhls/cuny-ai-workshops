@@ -1,32 +1,30 @@
-# **AI Literacy and Disciplinary Thinking**
+# AI Literacy and Disciplinary Thinking - Workshop Outline
 
-Zach Muhlbauer and Manju Adikesevan
+## Workshop Information
 
-Monday, March 4
+**Title:** AI Literacy and Disciplinary Thinking  
+**Date:** Monday, March 4, 2024  
+**Time:** 3:00-4:30 PM  
+**Duration:** 90 minutes  
+**Format:** Hyflex (Zoom and in-person, Room 3317)  
+**Facilitators:** Zach Muhlbauer and Manju Adikesevan
 
-Hyflex (On Zoom and in Room 3317), 3:00-4:30 PM
+## Workshop Description
 
-*Instructors teaching with artificial intelligence face critical issues in data privacy, intellectual property, and algorithmic bias. Join us to learn how these concerns can inform the selection of AI tools suitable for your discipline, and how to impart similar AI literacies to your students.*
+Instructors teaching with artificial intelligence face critical issues in data privacy, intellectual property, and algorithmic bias. This workshop helps participants learn how these concerns can inform the selection of AI tools suitable for their discipline and how to impart similar AI literacies to their students.
 
-# 
+## Detailed Agenda
 
-# **Workshop Planning and Outline (Feb 29)**
+### Part 1: Group Brainstorm - Taking Inventory of AI Tools (20 minutes)
 
-**Part 1**
+**Activity:** Prompt attendees to define what AI literacy entails for teaching in their specific discipline
 
-(20 minutes, 2 slides)
+**Process:**
+- Discuss and draw connections between their disciplinary definitions of AI literacy
+- Explore how AI tools have different affordances that can be customized to disciplinary contexts
 
-**Group Brainstorm: Taking Inventory of AI Tools**
-
--   Prompt attendees to define what AI literacy entails for teaching in their specific discipline
-
--   Discuss and draw connections between their disciplinary definitions of AI literacy
-
--   AI tools have different affordances that can be customized to disciplinary contexts.
-
-> **Prompts:**
-
--   What AI platforms do you know of besides ChatGPT (Poll Everywhere + Word Cloud)
+**Discussion Prompts:**
+- What AI platforms do you know of besides ChatGPT? (Poll Everywhere + Word Cloud)
 
 -   How are they relevant to your discipline? (Group Discussion)
 
