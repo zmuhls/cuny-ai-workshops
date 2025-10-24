@@ -140,7 +140,7 @@ const OpenRouterStep = () => {
                     <div className="flex items-center">
                       <span className="text-green-600 mr-2">✓</span>
                       <span className="font-mono text-sm bg-gray-100 px-2 py-1 rounded">
-                        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
+                        [Your OpenRouter API Key]
                       </span>
                       <button 
                         onClick={hideApiKey}
