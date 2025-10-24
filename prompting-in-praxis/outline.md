@@ -40,9 +40,9 @@
    - Image upload capabilities
    - Conversation history
 3. **Model Overview:** Available models and their capabilities
-   - **GPT-4o** - OpenAI's flagship with vision capabilities
-   - **Claude 3.5 Sonnet** - Anthropic's advanced reasoning model
-   - **Gemini Pro Vision** - Google's multimodal model
+   - **Qwen3-235B-A22B** - Large language model with advanced multilingual reasoning capabilities
+   - **GPT-OSS-120B** - High-performance open-source model with strong analytical capabilities
+   - **Gemma-3-27B** - Google's efficient and responsive language model
    - **Llama models** - Meta's open-source alternatives
    - **Mistral models** - Including vision-capable variants
 
@@ -73,7 +73,7 @@
 **Objective:** Explore how different models handle incomplete historical texts
 
 **Setup in Open WebUI:**
-1. Select GPT-4o model
+1. Select Qwen3-235B-A22B model
 2. Set temperature to 0.2 (focused completion)
 3. Input provided historical document excerpt with missing sections
 

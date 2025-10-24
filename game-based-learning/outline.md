@@ -86,7 +86,7 @@
 
 ### Part IV. Prompt Your Own Adventure Game
 
-Prompting ChatGPT-4o to serve as an interactive text adventure game:
+Prompting large language models (using Qwen3-235B-A22B or GPT-OSS-120B) to serve as an interactive text adventure game:
 
 -   **Zero Shot:** [action verb] a scaffolded text-based adventure game where I explore a haunted castle to learn about AI literacy
 
@@ -102,7 +102,7 @@ Prompting ChatGPT-4o to serve as an interactive text adventure game:
 
 **Collaborative Prompting**
 
-Invite group to complete prompt template for text adventure game with ChatGPT-4o on shared screen:
+Invite group to complete prompt template for text adventure game using available large language models on shared screen:
 
 1.  Prompt Template: Text Adventure Game
 

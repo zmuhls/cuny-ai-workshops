@@ -122,7 +122,7 @@ This platform provides hands-on experience with:
 **Objective:** Test how different models handle incomplete historical texts
 
 **Setup in Open WebUI:**
-1. Select a model (try GPT-4o first, then compare with Claude 3.5 Sonnet)
+1. Select a model (try Qwen3-235B-A22B first, then compare with GPT-OSS-120B)
 2. Set temperature to 0.2 for focused completion
 3. Use this prompt template:
 
@@ -200,7 +200,7 @@ Provide:
 
 **Step 1: Setup**
 - Log into Open WebUI
-- Select first model (e.g., GPT-4o with vision)
+- Select first model (e.g., Qwen3-235B-A22B)
 - Upload chosen document
 
 **Step 2: Baseline Analysis**
@@ -243,11 +243,10 @@ Participants will create a comparison matrix documenting model strengths and lim
 - Basic familiarity with web interfaces
 
 **Available AI Models:**
-- **GPT-4o** (OpenAI) - Flagship language model with vision
-- **Claude 3.5 Sonnet** (Anthropic) - Advanced reasoning and analysis
-- **Gemini Pro Vision** (Google) - Multimodal text and image processing
-- **Llama models** (Meta) - Open-source alternatives
-- **Mistral models** - Including vision-capable variants
+- **Qwen3-235B-A22B** - Large language model with advanced multilingual reasoning capabilities
+- **GPT-OSS-120B** - High-performance open-source model with strong analytical capabilities
+- **Gemma-3-27B** - Google's efficient and responsive language model
+- **Other open-source models** - Various architectures and specialized capabilities
 
 **Workshop Materials:**
 - Detailed outline with structured agenda
