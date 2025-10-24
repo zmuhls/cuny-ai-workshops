@@ -45,15 +45,15 @@ Primitives = the smallest processing unit of an AI model
 
 1.  Zigzag: <https://quickdraw.withgoogle.com/data/zigzag>
 
-\`\`\` 1. Snowflake: <https://quickdraw.withgoogle.com/data/snowflake>
+2. Snowflake: <https://quickdraw.withgoogle.com/data/snowflake>
 
-2.  Apple: <https://quickdraw.withgoogle.com/data/apple>
+3.  Apple: <https://quickdraw.withgoogle.com/data/apple>
 
-3.  Compass: <https://quickdraw.withgoogle.com/data/compass>
+4.  Compass: <https://quickdraw.withgoogle.com/data/compass>
 
-4.  Camouflage: <https://quickdraw.withgoogle.com/data/camouflage>
+5.  Camouflage: <https://quickdraw.withgoogle.com/data/camouflage>
 
-5.  Animal migration: <https://quickdraw.withgoogle.com/data/animal_migration>
+6.  Animal migration: <https://quickdraw.withgoogle.com/data/animal_migration>
 
 **Next**: look at the dataset for an image you drew
 
