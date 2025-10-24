@@ -44,8 +44,8 @@ Provides a brief introduction to generative AI and helps instructors craft thoug
 ### [Teach@CUNY AI Toolkit](./tcuny-ai-toolkit/)
 Comprehensive resource developed by the Teaching and Learning Center to help CUNY instructors navigate and critically engage with artificial intelligence in educational settings through five core provocations and practical guidance.
 
-**Platform:** [aitoolkit.commons.gc.cuny.edu](https://aitoolkit.commons.gc.cuny.edu/)
-**Format:** Online resource with course policies, assignment makeovers, and sample activities
+- **Platform:** [aitoolkit.commons.gc.cuny.edu](https://aitoolkit.commons.gc.cuny.edu/)
+- **Format:** Online resource with course policies, assignment makeovers, and sample activities
 
 ## Repository Structure
 
