@@ -13,203 +13,110 @@
 
 Instructors teaching with artificial intelligence face critical issues in data privacy, intellectual property, and algorithmic bias. This workshop helps participants learn how these concerns can inform the selection of AI tools suitable for their discipline and how to impart similar AI literacies to their students.
 
+## Learning Objectives
+
+By the end of this workshop, participants will be able to:
+- Define AI literacy within their specific discipline
+- Apply the four A's framework (Application, Agency, Authenticity, Accountability) to course assignments
+- Revise existing assignments to integrate relevant AI literacies
+- Develop policies and expectations for AI use in their courses
+
 ## Detailed Agenda
 
 ### Part 1: Group Brainstorm - Taking Inventory of AI Tools (20 minutes)
 
-**Activity:** Prompt attendees to define what AI literacy entails for teaching in their specific discipline
+**Activity:** Define AI literacy for teaching in specific disciplines
 
 **Process:**
-- Discuss and draw connections between their disciplinary definitions of AI literacy
+- Discuss and draw connections between disciplinary definitions of AI literacy
 - Explore how AI tools have different affordances that can be customized to disciplinary contexts
 
 **Discussion Prompts:**
 - What AI platforms do you know of besides ChatGPT? (Poll Everywhere + Word Cloud)
+- How are they relevant to your discipline? (Group Discussion)
+- Where do you see the need for AI literacies when teaching your discipline? (Group Discussion)
 
--   How are they relevant to your discipline? (Group Discussion)
+### Part 2: AI Literacy Framework Presentation (40 minutes)
 
--   Where do you see the need for AI literacies when teaching your discipline? (Group Discussion)
+**Overview:** Walk through AI literacy framework focusing on four key capabilities: Application, Agency, Authenticity, and Accountability. Participants will adapt this framework to assignments in their discipline.
 
-**Part 2**
+**Framework Activity:**
+1. Select an assignment you have taught in the past
+2. Choose one AI tool to support a specific stage of that assignment
 
-(40 minutes, 8 slides)
+#### The Four A's Framework
 
-**Presentation (with Q&A interspersed): AI Literacy Framework**
+**1. Application** - Using AI tools aligned with the task at hand
 
-**AI Literacy Framework**: Walk through AI literacy framework with attention to four sets of capabilities --- application, authenticity, accountability, and agency --- for attendees to adapt to assignments used to teach their discipline.
+Key considerations:
+- Helping students decide which AI tool to use for different tasks
+- Assessing the capabilities and limitations of that tool within their discipline
+- Establishing best practices for optimizing students' use of that tool (e.g., specific commands, prompts, or queries)
+- Scrutinizing the dataset on which the tool is trained
 
-> **Prompts**:
+*Discussion Prompt:* How will students apply the AI tool to a specific stage of your assignment?
 
-1.  Select an assignment you have taught in the past and one AI tool to support a specific stage of that assignment
+**2. Agency** - Students retaining control over their learning process
 
-**Application** involves knowing how to use AI tools that are aligned with the task at hand
+Key considerations:
+- Assessing whether use of AI enables students to retain or expand personal choices
+- Ensuring students use AI intentionally to expand their knowledge and skills
+- Empowering students to make independent decisions while using AI for assistance
 
--   Helping students decide which AI tool to use for different tasks
+*Discussion Prompt:* How can students use the AI tool to expand knowledge or skills relevant to your assignment?
 
--   Assessing the capabilities and limitations of that tool within their discipline
+**3. Authenticity** - Centering genuine human communication and interaction
 
--   Establishing best practices for optimizing students' use of that tool (e.g. use of specific commands, prompts, or queries)
+Key considerations:
+- Fostering intrinsic motivation among students to express their own voice or style
+- Engaging students in interest-driven learning that promotes authentic participation
+- Encouraging students to build trust and credibility as part of their use of AI tools
 
--   Scrutinizing the data set on which the tool is trained
+*Discussion Prompt:* How can students express their own voice or style in their use of AI for your assignment?
 
-> **Prompt**:
+**4. Accountability** - Taking responsibility for AI-influenced content and using generative AI fairly and equitably
 
-1.  How will students apply the AI tool to a specific stage of your assignment?
+Key considerations:
+- Guiding students to factually verify and take responsibility for AI content
+- Ensuring AI tools used to support work provide equal access to all stakeholders
+- Teaching how to properly cite and attribute AI tools within specific disciplines
 
-**Agency** involves students retaining control over their learning process
+*Discussion Prompt:* How can students expect to be held accountable for their use of AI in response to your assignment?
 
--   Assessing whether use of AI enables students to retain or expand personal choices
+### Part 3: Assignment Makeover Activity (30 minutes)
 
--   Ensuring students use AI intentionally to expand their knowledge and skills
+**Individual Work:** Revise an existing assignment to integrate AI literacies
 
--   Empowering students to make independent decisions while using AI for assistance
+**Instructions:**
+1. Pick one assignment you are currently using in your course
+2. Revise the assignment instructions/parameters to reflect AI literacies relevant to your discipline
+3. Craft assignment instructions about instructor policies and expectations around the use of AI for the assignment
 
-> **Prompt**: How can students use the AI tool to expand knowledge or skills relevant to your assignment?
+**Deliverables:**
+- Revised assignment with integrated AI literacy components
+- Clear policy statements for AI use expectations
+- Application of the Four A's framework to the specific assignment context
 
-**Authenticity** involves centering genuine human communication and interaction
+### Wrap-Up and Sharing (5 minutes)
 
--   Fostering intrinsic motivation among students to express their own voice or style
+**Activity:** Brief sharing of revised assignments and key insights
+**Discussion:** Questions and next steps for implementing AI literacy in courses
 
--   Engaging students in interest-driven learning that promotes authentic participation
+## Materials Needed
 
--   Encouraging students to build trust and credibility as part of their use of AI tools
+- Shared document or collaborative board for brainstorming
+- Poll Everywhere setup for interactive polling
+- Assignment template for makeover activity
+- Four A's framework reference sheet
 
-> **Prompt**: How can students express their own voice or style in their use of AI for your assignment?
+## Assessment
 
-**Accountability** involves taking responsibility for AI-influenced content and using generative AI in a fair and equitable manner within specific disciplines
+**Formative Assessment:**
+- Participation in group discussions and brainstorming
+- Quality of assignment revision incorporating AI literacy principles
+- Demonstration of understanding of the Four A's framework
 
--   Guiding students to factually verify and take responsibility for AI content
-
--   Ensuring AI tools used to support work provide equal access to all stakeholders
-
--   Teaching how to properly cite and attribute AI tools within specific disciplines
-
-> **Prompt**: How can student expect to be held accountable for their use of AI in response to your assignment?
-
-**[Part 3\
-]{.underline}**(30 minutes, 2 slides, in a shared document)
-
-**Work-on-your-own activity: Assignment Makeover**
-
--   Attendees will pick one assignment they are currently using in their course
-
--   Revise the assignment instructions/parameters to reflect AI literacies relevant to their discipline
-
--   Craft assignment instructions about instructors policies and expectations around the use of AI for the assignment
-
-# \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-# **Workshop Planning and Outline (Feb 27)**
-
-**Part 1**
-
-**Group Brainstorm: Defining AI Literacy and Discussion** (20 minutes, 2 slides, in a shared document/board)
-
--   Prompt attendees to define what AI literacy entails for teaching in their specific discipline
-
--   Discuss and draw connections between their disciplinary definitions of AI literacy
-
--   AI tools have different affordances that can be customized to disciplinary contexts.
-
-> Prompts:
-
--   What AI platforms do you know of besides ChatGPT (Poll Everywhere + Word Cloud)
-
--   How are they relevant to your discipline? (Group Discussion)
-
--   Where do you see the need for AI literacies when teaching your discipline? (Group Discussion)
-
-**Part 2**
-
-(40 minutes, 6-8 slides)
-
-**Presentation (with Q&A interspersed): AI Literacy Framework**
-
-**AI Literacy Framework**: Walk through AI literacy framework with attention to four sets of capabilities --- application, authenticity, accountability, and agency --- for attendees to adapt to their discipline.
-
--   **Application** involves knowing how to use AI tools that are aligned with the task at hand
-
-    -   Helping students decide which AI tool to use for different tasks
-
-    -   Assessing the capabilities and limitations of that tool within their discipline
-
-    -   Establishing best practices for optimizing students' use of that tool
-
-        -   e.g. use of commands, prompts, or queries
-
-    -   Scrutinizing the data set on which the tool is trained
-
--   **Accountability** involves taking responsibility for AI-influenced content and using generative AI in a fair and equitable manner within specific disciplines
-
-    -   Guiding students to factually verify and take responsibility for AI content
-
-    -   Ensuring AI tools used to support work provide equal access to all stakeholders
-
-    -   Teaching how to properly cite and attribute AI tools within specific disciplines
-
--   **Authenticity** involves centering genuine human communication and interaction
-
-    -   Fostering intrinsic motivation among students to express their own voice or style
-
-    -   Engaging students in interest-driven learning that promotes authentic participation
-
-    -   Encouraging students to build trust and credibility as part of their use of AI tools
-
--   **Agency** involves students retaining control over their learning process
-
-    -   Assessing whether use of AI enables students to retain or expand personal choices
-
-    -   Ensuring students use AI intentionally to expand their knowledge and skills
-
-    -   Empowering students to make independent decisions in using AI for assistance
-
-**[Part 3\
-]{.underline}**(30 minutes, 2 slides, in a shared document)
-
-**Synthesis Activity and Discussion**. Prompt attendees to identify one learning outcome from Bloom's Taxonomy to implement AI literacies (authenticity, accountability, agency, application)
-
-![](./media/image1.png){width="6.5151432633420825in" height="5.034958442694663in"}
-
-Anchor points and examples
-
-**Literacy Narrative - a learning journey about any topic - fashion literacy, multicultural identity literacy**
-
-**Example: Describe the learning assignment Literacy Narrative**
-
-**Identify the cognitive level within Blooms Taxonomy: Create**
-
-  ---------------------------------------------------------------------------------------------------------
-                          **Human Skills**                                          **AI Capabilities**
-  ----------------------- --------------------------------------------------------- -----------------------
-  **Accountability**                                                                
-
-  **Authenticity**        Derived from student positionality and lived experience   
-
-  **Application**                                                                   
-
-  **Agency**                                                                        
-  ---------------------------------------------------------------------------------------------------------
-
-  ----------------------------------------------------------------------------------------------------------------------------------------
-  Learning Outcome   Accountability   Agency   Application   Authenticity                                                
-  ------------------ ---------------- -------- ------------- ----------------------------------------------------------- -----------------
-                                                             Human Skills                                                AI Capabilities
-
-  Create                                                     The source of knowledge - positionality, lived experience   
-
-  Evaluate                                                                                                               
-
-  Analyze                                                                                                                
-
-  Apply                                                                                                                  
-
-  Understand                                                                                                             
-
-  Remember                                                                                                               
-  ----------------------------------------------------------------------------------------------------------------------------------------
-
-Post-feedback notes
-
-Blooms Taxonomy + AI Literacies - redo a graphic to intersect with the 4 As
-
-Application, Accountability, and Agency
+**Workshop Success Indicators:**
+- Participants can articulate AI literacy within their disciplinary context
+- Revised assignments effectively integrate multiple aspects of AI literacy
+- Clear policies and expectations developed for AI use in courses
