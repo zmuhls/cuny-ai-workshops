@@ -4,9 +4,9 @@ _A CUNY AI Lab workshop on language model concepts and prompting techniques for 
 
 This interactive workshop introduces key concepts in Large Language Model (LLM) prompting and provides hands-on experience using the [CUNY Open WebUI experimental pilot](https://openwebui.cuny.qzz.io/) for comparing AI models. Participants develop practical skills for historical research, document analysis, and critical evaluation of AI-generated content.
 
-**Workshop Platform:** [CUNY Open WebUI Experimental Pilot](https://openwebui.cuny.qzz.io/)  
-**Duration:** 90 minutes  
-**Format:** Interactive workshop with live model comparison exercises
+- **Workshop Platform:** [CUNY Open WebUI Experimental Pilot](https://openwebui.cuny.qzz.io/)  
+- **Duration:** 90 minutes  
+- **Format:** Interactive workshop with live model comparison exercises
 
 _This workshop was originally conducted as part of the Teaching and Learning Center at the CUNY Graduate Center._
 
