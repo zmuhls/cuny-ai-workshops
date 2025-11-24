@@ -4,10 +4,10 @@ _A CUNY AI Lab workshop introducing game-based strategies for teaching with and 
 
 This workshop introduces game-based strategies for developing students' AI literacy through interactive storytelling, collaborative problem solving, doodling, and notecard exercises. Participants learn how to teach methods of prompt engineering by designing—and playing—their own choose-your-own-adventure games.
 
-**Workshop Date:** Wednesday, October 16, 2024
-**Duration:** 90 minutes (2:00-3:30 PM)
-**Format:** In-person (Room 3317)
-**Facilitator:** Zach Muhlbauer
+- **Workshop Date:** Wednesday, October 16, 2024
+- **Duration:** 90 minutes (2:00-3:30 PM)
+- **Format:** In-person (Room 3317)
+- **Facilitator:** Zach Muhlbauer
 
 _This workshop was originally conducted as part of the Teaching and Learning Center at the CUNY Graduate Center._
 
